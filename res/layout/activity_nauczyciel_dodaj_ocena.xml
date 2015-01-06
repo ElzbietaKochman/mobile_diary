@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Dodaj ocenę"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:id="@+id/wartosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="3"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/info"
+        android:layout_marginTop="52dp"
+        android:text="Wpisz wartość oceny:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wartosc"
+        android:layout_marginTop="18dp"
+        android:text="Komentarz do oceny: " />
+
+    <EditText
+        android:id="@+id/komentarz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="8"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/dodajOcena"
+        android:onClick="onDodajOcena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/komentarz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="Dodaj" />
+
+    <Button
+        android:id="@+id/koncowa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sem"
+        android:layout_alignRight="@+id/sem"
+        android:layout_below="@+id/sem"
+        android:onClick="onDodajOcenaKoncowa"
+        android:text="Dodaj jako ocenę końcową" />
+
+    <Button
+        android:id="@+id/sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dodajOcena"
+        android:layout_centerHorizontal="true"
+        android:onClick="onDodajOcenaSemestralna"
+        android:text="Dodaj jako ocenę semestralną" />
+
+</RelativeLayout>

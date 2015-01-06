@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:theme="@style/themeApp" 
+        android:label="Dzienniczek"
+        >
+        <activity android:name="com.example.diary.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.diary.admin.AdminActivity" >
+        </activity>
+        <activity android:name="com.example.diary.nauczyciel.NauczycielActivity" >
+        </activity>
+        <activity android:name="com.example.diary.uczen.UczenActivity" >
+        </activity>
+        <activity android:name="com.example.diary.wychowawca.WychowawcaActivity" >
+        </activity>
+        <activity android:name="com.example.diary.opiekun.OpiekunActivity" >
+        </activity>
+        <activity android:name="com.example.diary.uczen.UczenOcenyActivity" >
+        </activity>
+        <activity android:name="com.example.diary.uczen.UczenOgloszeniaActivity" >
+        </activity>
+        <activity android:name="com.example.diary.uczen.UczenArchiwumActivity" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenUwagiActivity"
+            android:label="@string/title_activity_uwagi_student" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenObecnosciActivity"
+            android:label="@string/title_activity_obecnosci_student" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielOcenaActivity"
+            android:label="@string/title_activity_nauczyciel_ocena" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielKomunikatorActivity"
+            android:label="@string/title_activity_nauczyciel_komunikator" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielOgloszenieActivity"
+            android:label="@string/title_activity_nauczyciel_ogloszenie" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielUwagaActivity"
+            android:label="@string/title_activity_nauczyciel_uwaga" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielNieobecnoscActivity"
+            android:label="@string/title_activity_nauczyciel_nieobecnosc" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielObecnoscActivity"
+            android:label="@string/title_activity_nauczyciel_obecnosc" >
+        </activity>
+        <activity
+            android:name="com.example.diary.wychowawca.WychowawcaNieobecnoscActivity"
+            android:label="@string/title_activity_wychowawca_nieobecnosci" >
+        </activity>
+        <activity
+            android:name="com.example.diary.wychowawca.WychowawcaKomunikatorActivity"
+            android:label="@string/title_activity_wychowawca_komunikator" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunOcenaActivity"
+            android:label="@string/title_activity_opiekun_ocena" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunUwagaActivity"
+            android:label="@string/title_activity_opiekun_uwaga" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunNiebecnoscActivity"
+            android:label="@string/title_activity_opiekun_obecnosc" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunOgloszenieActivity"
+            android:label="@string/title_activity_opiekun_ogloszenie" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunArchiwumActivity"
+            android:label="@string/title_activity_opiekun_archiwum" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunKomunikatorActivity"
+            android:label="@string/title_activity_opiekun_komunikator" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielOcenaWybierzActivity"
+            android:label="@string/title_activity_nauczyciel_ocena_wybierz" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenArchiwumOcenyActivity"
+            android:label="@string/title_activity_uczen_archiwum_oceny_activity" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenArchiwumObecnosciActivity"
+            android:label="@string/title_activity_uczen_archiwum_obecnosci" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenArchiwumOgloszeniaActivity"
+            android:label="@string/title_activity_uczen_archiwum_ogloszenia" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenArchiwumUwagiActivity"
+            android:label="@string/title_activity_uczen_archiwum_uwagi" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunArchiwumOcenaActivity"
+            android:label="@string/title_activity_opiekun_archiwum_ocena" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunArchiwumOgloszenieActivity"
+            android:label="@string/title_activity_opiekun_archiwum_ogloszenie" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunArchiwumNieobecnoscActivity"
+            android:label="@string/title_activity_opiekun_archiwum_nieobecnosc" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunArchiwumUwagaActivity"
+            android:label="@string/title_activity_opiekun_archiwum_uwaga" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunZwolnienieActivity"
+            android:label="@string/title_activity_opiekun_zwolnienie" >
+        </activity>
+        <activity
+            android:name="com.example.diary.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenStatystykiActivity"
+            android:label="@string/title_activity_uczen_statystyki" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenStatystykiSrednieActivity"
+            android:label="@string/title_activity_uczen_statystyki_srednie" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenStatystykiKoncoweActivity"
+            android:label="@string/title_activity_uczen_statystyki_koncowe" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenStatystykiPrzedmiotActivity"
+            android:label="@string/title_activity_uczen_statystyki_przedmiot" >
+        </activity>
+        <activity
+            android:name="com.example.diary.uczen.UczenStatystykiCzastkoweActivity"
+            android:label="@string/title_activity_uczen_statystyki_czastkowe" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielDodajOcenaActivity"
+            android:label="@string/title_activity_nauczyciel_dodaj_ocena" >
+        </activity>
+        <activity
+            android:name="com.example.diary.wychowawca.WychowawcaUsprawiedliwActivity"
+            android:label="@string/title_activity_wychowawca_usprawiedliw" >
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunStatystykiActivity"
+            android:label="@string/title_activity_opiekun_statystyki" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunStatystykiCzastkoweActivity"
+            android:label="@string/title_activity_opiekun_statystyki_czastkowe" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunStatystykiKoncoweActivity"
+            android:label="@string/title_activity_opiekun_statystyki_koncowe" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunStatystykiPrzedmiotActivity"
+            android:label="@string/title_activity_opiekun_statystyki_przedmiot" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunStatystykiSrednieActivity"
+            android:label="@string/title_activity_opiekun_statystyki_srednie" >
+        </activity>
+        <activity
+            android:name="com.example.diary.CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunUploadActivity"
+            android:label="@string/title_activity_opiekun_upload" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielDownloadActivity"
+            android:label="@string/title_activity_nauczyciel_download" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunKomunikatorNoweActivity"
+            android:label="@string/title_activity_opiekun_komunikator_nowe" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunKomunikatorNoweRozmowaActivity"
+            android:label="@string/title_activity_opiekun_komunikator_nowe_rozmowa" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunKomunikatorMojeActivity"
+            android:label="@string/title_activity_opiekun_komunikator_moje" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunKomunikatorMojeRozmowaActivity"
+            android:label="@string/title_activity_opiekun_komunikator_moje_rozmowa" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunKomunikatorRozmowaWybierzActivity"
+            android:label="@string/title_activity_opiekun_komunikator_rozmowa_wybierz" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunKomunikatorRozmowaActivity"
+            android:label="@string/title_activity_opiekun_komunikator_rozmowa" >
+        </activity>
+        <activity
+            android:name="com.example.diary.opiekun.OpiekunKomunikatorZadzwonActivity"
+            android:label="@string/title_activity_opiekun_komunikator_zadzwon" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielKomunikatorMojeActivity"
+            android:label="@string/title_activity_nauczyciel_komunikator_moje" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielKomunikatorNoweActivity"
+            android:label="@string/title_activity_nauczyciel_komunikator_nowe" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielKomunikatorNoweRozmowaActivity"
+            android:label="@string/title_activity_nauczyciel_komunikator_nowe_rozmowa" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielKomunikatorRozmowaActivity"
+            android:label="@string/title_activity_nauczyciel_komunikator_rozmowa" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielKomunikatorRozmowaWybierzActivity"
+            android:label="@string/title_activity_nauczyciel_komunikator_rozmowa_wybierz" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielKomunikatorZadzwonActivity"
+            android:label="@string/title_activity_nauczyciel_komunikator_zadzwon" >
+        </activity>
+        <activity
+            android:name="com.example.diary.OpiekunUploadPhotoActivity"
+            android:label="@string/title_activity_opiekun_upload_photo" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielWybierzPlikActivity"
+            android:label="@string/title_activity_nauczyciel_wybierz_plik" >
+        </activity>
+        <activity
+            android:name="com.example.diary.nauczyciel.NauczycielPokazZdjecieActivity"
+            android:label="@string/title_activity_nauczyciel_pokaz_zdjecie" >
+        </activity>
+        <activity
+            android:name="com.example.diary.CallActivity"
+            android:label="@string/title_activity_call" >
+        </activity>
+    </application>
+
+</manifest>

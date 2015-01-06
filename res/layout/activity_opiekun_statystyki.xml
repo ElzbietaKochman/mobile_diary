@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/koncowe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/przedmiot"
+        android:layout_alignRight="@+id/przedmiot"
+        android:layout_below="@+id/srednie"
+        android:onClick="onKoncowe"
+        android:text="Oceny końcowe" />
+
+    <Button
+        android:id="@+id/srednie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/koncowe"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/koncowe"
+        android:layout_marginTop="94dp"
+        android:onClick="onSrednie"
+        android:text="Zobacz średnie" />
+
+    <Button
+        android:id="@+id/przedmiot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/koncowe"
+        android:layout_centerHorizontal="true"
+        android:onClick="onPrzedmiot"
+        android:text="Statystyki przedmiotu" />
+
+    <Button
+        android:id="@+id/czastkowe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/przedmiot"
+        android:layout_alignRight="@+id/przedmiot"
+        android:layout_below="@+id/przedmiot"
+        android:onClick="onCzastkowe"
+        android:text="Statystyki ocen cząstkowych" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Statystyki"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

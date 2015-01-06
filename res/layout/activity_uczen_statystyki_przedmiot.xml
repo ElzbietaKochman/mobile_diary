@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Statystyki przedmiotu"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/wybieraj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="21dp"
+        android:text="Wybierz przedmiot: " />
+
+    <Spinner
+        android:id="@+id/wybierzPrzedmiot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wybieraj"
+        android:layout_toRightOf="@+id/wybieraj" />
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="onWybierz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/wybieraj"
+        android:layout_below="@+id/wybieraj"
+        android:layout_marginRight="14dp"
+        android:text="Wybierz" />
+
+    <TableLayout
+        android:id="@+id/tabelka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" >
+    </TableLayout>
+
+</RelativeLayout>

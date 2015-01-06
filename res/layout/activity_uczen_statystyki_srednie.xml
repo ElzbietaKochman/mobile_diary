@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TableLayout
+        android:id="@+id/tabelka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="14dp" >
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/rokW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tabelka"
+        android:layout_marginTop="90dp"
+        android:text="Wybierz rok szkolny" />
+
+    <Spinner
+        android:id="@+id/wybierzRok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rokW"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/rokW" />
+
+    <TextView
+        android:id="@+id/statusW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wybierzRok"
+        android:text="Pokaż ocenę" />
+
+    <Spinner
+        android:id="@+id/wybierzStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wybierzRok"
+        android:layout_alignTop="@+id/statusW" />
+
+    <Button
+        android:id="@+id/wyszukaj"
+        android:onClick="onWyszukaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wybierzStatus"
+        android:layout_centerHorizontal="true"
+        android:text="Wyszukaj" />
+
+    <TableLayout
+        android:id="@+id/tabelkaDynamiczna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tabelka"
+        android:layout_below="@+id/wyszukaj" >
+    </TableLayout>
+
+</RelativeLayout>

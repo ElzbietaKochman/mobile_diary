@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.diary.opiekun.OpiekunActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="Wybierz ucznia" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:id="@+id/lin">
+    
+    <Button
+        android:id="@+id/nieobecnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNieobecnosc"
+        android:text="Sprawdź nieobecnosci" />
+
+    <Button
+        android:id="@+id/ogloszenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onOgloszenie"
+        android:text="Tablica ogłoszeń" />
+
+    <Button
+        android:id="@+id/uwaga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onUwaga"
+        android:text="Zobacz uwagi" />
+
+    <Button
+        android:id="@+id/archiwum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onArchiwum"
+        android:text="Archiwum" />
+
+    <Button
+        android:id="@+id/komunikator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onKomunikator"
+        android:text="Komunikator" />
+
+    <Button
+        android:id="@+id/statystyki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStatystyki"
+        android:text="Statystyki ucznia" />
+
+    <Button
+        android:id="@+id/oceny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onOcena"
+        android:text="Przeglądaj oceny" />
+
+    <Button
+        android:id="@+id/zwolnienie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onZwolnienie"
+        android:text="Przeslij plik" />
+    
+      </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/w_klasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/w_przedmiot"
+        android:layout_below="@+id/w_przedmiot"
+        android:layout_marginTop="32dp"
+        android:text="Wybierz klasę: " />
+
+    <Button
+        android:id="@+id/dalej"
+        android:onClick="onDalej"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/w_klasa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Dalej" />
+
+    <TextView
+        android:id="@+id/w_przedmiot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="84dp"
+        android:text="Wybierz przedmiot:" />
+
+    <Spinner
+        android:id="@+id/przedmiot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/w_przedmiot"
+        android:layout_toRightOf="@+id/w_przedmiot" />
+
+    <Spinner
+        android:id="@+id/klasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/w_klasa"
+        android:layout_toRightOf="@+id/w_przedmiot" />
+
+</RelativeLayout>

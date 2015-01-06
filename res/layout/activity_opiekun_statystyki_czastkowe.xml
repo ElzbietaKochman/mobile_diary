@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Statystyki ocen cząstkowych"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:text="Wybierz rok szkolny" />
+
+    <Spinner
+        android:id="@+id/wybierzRok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="Wybierz przedmiot" />
+
+    <Spinner
+        android:id="@+id/wybierzPrzedmiot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignTop="@+id/wybierzRok" />
+
+    <TextView
+        android:id="@+id/przedmiotek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/onCzastkowe"
+        android:layout_marginTop="44dp"
+       />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wybierzRok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Kliknij, aby zobaczyć jaka jest Twoja\nzależność ocen od czasu." />
+
+    <Button
+        android:id="@+id/onCzastkowe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCzastkowe"
+        android:text="Pokaż statystyki" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/przedmiotek"
+        android:layout_centerHorizontal="true"
+        android:text="Kliknij, aby zobaczyć jaka jest ilość\nocen z danego przedmiotu." />
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="onHistogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:text="Histogram ocen z przedmiotu" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Kliknij, aby zobaczyć jaka jest ilość\nposzczególnych ocen z całego roku." />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="onCalyRok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:text="Histogram ocen z całego roku" />
+
+</RelativeLayout>
